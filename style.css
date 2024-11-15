@@ -1,0 +1,254 @@
+:root{
+    --primary: rgb(224, 55, 13);
+    --background: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+
+body{
+    background-color: var(--background);
+    /* height: 1000vh; */
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 7%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navbar */
+.navbar-logo{
+    font-size: 2.2rem;
+    color: red;
+}
+
+.navbar .navbar-nav a{
+    font-size: 1.6rem;
+    color: #fff;
+    display: inline-block;
+    margin: 0.5rem;
+
+}
+
+.navbar .navbar-icon a{
+    color: black;
+    margin: 0 0.5rem;
+}
+
+/* .navbar .navbar-button{
+    background-color: aqua;
+    padding: 
+} */
+
+.navbar .navbar-button .tombol{
+    background-color: red;
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    transition:0.43s ease;
+}
+
+.navbar .navbar-button .tombol:hover{
+    background-color: blue;
+}
+
+/* Hero Section */
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    /* mask-image: linear-gradient(rgba(0, 0, 0, 1) 87%, rgba(0, 0, 0, 0)); */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('lapangan.jpg'); /* Pastikan path benar */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1.2px);
+    z-index: 0; /* Set ke 0 agar tetap di bawah konten tetapi tidak tersembunyi */
+}
+
+.hero-content{
+    position: relative;
+    z-index: 1;
+    font-size: 1.4rem;
+    padding: 0 7%;
+}
+.hero-content span{
+    color: whitesmoke;
+}
+
+.hero .hero-content p{
+    max-width: 50%;
+    margin-top: 0.3rem;
+}
+
+
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: red; /* Warna hijau yang cocok untuk tombol */
+    color: #fff; /* Warna teks putih */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 1.3rem;
+}
+
+/* About Section */
+.about{
+    padding: 15rem 7% 1.4rem;
+    height: fit-content;
+}
+
+.about .about-row{
+    /* background-color: blue; */
+    display: flex;
+    padding-top: 4.5rem;
+    padding-bottom: 10rem;
+    height: 65vh;
+    border-bottom: 2px solid black;
+}
+
+.about-img img {
+    width: 80%;
+    padding-right: 3rem;
+    object-fit: fill;
+}
+
+.about h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+.about h2::after{
+    content: '' ;
+    padding-top: 2rem;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    display: block;
+    transform: scaleX(0.19);
+}
+
+.about p{
+    font-size: 1.2rem;
+    padding: 0 16%;
+}
+
+/* Fasilitas Start */
+.fasilitas {
+    text-align: center;
+    padding: 5rem 7% 1.4rem;
+}
+
+.fasilitas-h2 {
+    font-size: 36px; /* Sesuaikan ukuran */
+    color: rgb(0, 0, 0); /* Contoh warna teks */
+    text-align: center; /* Opsional */
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar kartu */
+    justify-content: center; /* Untuk menempatkan konten di tengah */
+}
+
+.card-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-content img {
+    width: 100%; /* Sesuaikan ukuran gambar */
+    height: auto;
+}
+
+.fasilitas h3{
+    padding-top: 1rem;
+}
+
+/* contact start */
+
+.contact h2{
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  padding-top: 10rem;
+}
+
+.contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+  }
+  
+  .contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--bg);
+    border: 1px solid #eee;
+    padding-left: 2rem;
+  }
+  
+  .contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    background: none;
+    color: #fff;
+  }
+  
+  .contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+  }
