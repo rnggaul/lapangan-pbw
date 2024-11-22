@@ -16,16 +16,16 @@
     <nav class="navbar">
         <a href="#" class="navbar-logo">Lapangan Futsal Merdeka</a>
         <div class="navbar-nav">
-            <a href="rent">Booking</a>
-            <a href="about">About</a>
-            <a href="facility">Facility</a>
-            <a href="contact">Contact</a>
+            <a href="booking.php">Booking</a>
+            <a href="#about">About</a>
+            <a href="#facility">Facility</a>
+            <a href="#contact">Contact</a>
         </div>
         <!-- <div class="navbar-icon">
             <a href="#"><i data-feather="shopping-cart"></i></a>   
         </div> -->  
         <div class="navbar-button">
-            <button class="tombol">Login</button>
+            <a href="login.php"><button href="login.php" class="tombol">Login</button></a>
             <button class="tombol">Daftar</button>
         </div>
     </nav>
@@ -35,11 +35,11 @@
         <div class="hero-content">
             <h1>Selamat Datang di <span>Lapangan Futsal</span> Merdeka</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum totam earum ratione expedita id optio ullam facilis velit obcaecati? Vel at consectetur non nesciunt ex natus nostrum corporis alias.</p>
-            <a href="#booking" class="hero-btn">Booking Sekarang</a>
+            <a href="booking.php" class="hero-btn">Booking Sekarang</a>
         </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
         <h2>Tentang Kami</h2>
         <div class="about-row">
             <div class="about-img">
@@ -55,7 +55,7 @@
     </section>
 
     <!-- Fasilitas Section Start -->
-    <section class="fasilitas">
+    <section id="facility" class="fasilitas">
         <h2 class="fasilitas-h2">Fasislitas Futsal Merdeka</h2>
         <div class="card-fasilitas">
             <img src="parkiran.jpg" alt="">
@@ -108,6 +108,28 @@
         </form>
       </div>
     </section>
+
+    <!-- Footer Start -->
+    <footer class="footer">
+      <div class="socials">
+        <a href="https://www.instagram.com/rnggaul/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang kami</a>
+        <a href="#facility">Fasilitas</a>
+        <a href="#contact">kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="https://github.com/rnggaul">Rangga Aulia</a>. |&copy; 2024.</p>
+      </div>
+    </footer>
     <script>
       feather.replace();
     </script>

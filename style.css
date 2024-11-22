@@ -211,8 +211,8 @@ body{
 .contact .row {
     display: flex;
     margin-top: 2rem;
-    background-color: #222;
-  }
+    background-color: #ffffff;
+}
   
   .contact .row .map {
     flex: 1 1 45rem;
@@ -231,7 +231,7 @@ body{
     align-items: center;
     margin-top: 2rem;
     background-color: var(--bg);
-    border: 1px solid #eee;
+    border: 1px solid #000000;
     padding-left: 2rem;
   }
   
@@ -252,3 +252,90 @@ body{
     background-color: var(--primary);
     cursor: pointer;
   }
+
+  /* footer */
+  .navbar-nav .nav-item .nav-link {
+    color: white; /* Warna teks link navbar */
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-nav .nav-item .btn {
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+  }
+  footer {
+    background-color: red;
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+  }
+  
+  footer .socials {
+    padding: 1rem 0;
+  }
+  
+  footer .socials a {
+    color: #fff;
+    margin: 1rem;
+  }
+  
+  footer .socials a:hover,
+  footer .links a:hover {
+    color: var(--bg);
+    transition: 0.7s;
+  }
+  
+  footer.links {
+    margin-bottom: 1.4rem;
+  }
+  
+  footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+  }
+  
+  footer .credit {
+    font-size: 0.8rem;
+  }
+  
+  footer .credit a {
+    color: white;
+    font-weight: 700;
+  }
+
+  /* halaman booking */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.375rem 0.375rem 0 0;
+  }
+  
+  /* Card Title */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Card Text */
+  .card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Price Text */
+  .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 1rem;
+  }
+  
