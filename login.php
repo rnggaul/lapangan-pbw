@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="login-container">
-        <form action="koneksi.php" method="POST" class="login-form">
+        <form action="verif.php" method="POST" class="login-form">
             <h2>Login</h2>
             <div class="form-group">
                 <label for="username">Username</label>

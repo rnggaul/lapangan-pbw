@@ -36,10 +36,10 @@
           <a class="nav-link" href="index.php">Contact</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger mx-2">Login</button>
+          <button class="btn btn-danger mx-2 my-1">Login</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger">Daftar</button>
+          <button class="btn btn-danger mx-2 my-1">Daftar</button>
         </li>
       </ul>
     </div>

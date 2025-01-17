@@ -304,6 +304,12 @@ body{
   }
 
   /* halaman booking */
+
+  .btn-danger {
+    width: 20px !important;
+    background-color: aqua !important;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
