@@ -36,10 +36,10 @@
           <a class="nav-link" href="index.php">Contact</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger mx-2">Login</button>
+          <button class="btn btn-danger mx-2 my-1">Login</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger">Daftar</button>
+          <button class="btn btn-danger mx-2 my-1">Daftar</button>
         </li>
       </ul>
     </div>
@@ -47,11 +47,10 @@
 </nav>
 
 
-<div class="container my-4">
-  <div class="row g-4">
-    <!-- Card 1 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
+    <div class="container my-4">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
         <div class="card">
           <img src="images/lapangan-rumput.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
@@ -63,14 +62,12 @@
             <p class="price">Mulai Rp240,000/sesi</p>
           </div>
         </div>
-      </a>
-    </div>
+      </div>
 
-    <!-- Card 2 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
+      <!-- Card 2 -->
+      <div class="col-md-4">
         <div class="card">
-          <img src="images/lapangantenis.jpg" class="card-img-top" alt="Venue Image">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Venue Image">
           <div class="card-body">
             <h5 class="card-title">Ace Tennis</h5>
             <p class="card-text">
@@ -80,14 +77,12 @@
             <p class="price">Mulai Rp150,000/sesi</p>
           </div>
         </div>
-      </a>
-    </div>
+      </div>
 
-    <!-- Card 3 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
+      <!-- Card 3 -->
+      <div class="col-md-4">
         <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
+          <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Venue Image">
           <div class="card-body">
             <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
             <p class="card-text">
@@ -97,64 +92,12 @@
             <p class="price">Mulai Rp150,000/sesi</p>
           </div>
         </div>
-      </a>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
-        <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
-          <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
-            <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
-              <i class="bi bi-badminton"></i> Badminton
-            </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Card 5 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
-        <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
-          <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
-            <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
-              <i class="bi bi-badminton"></i> Badminton
-            </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Card 6 -->
-    <div class="col-md-4">
-      <a href="bookinglapangan.php" class="text-decoration-none">
-        <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
-          <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
-            <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
-              <i class="bi bi-badminton"></i> Badminton
-            </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
-          </div>
-        </div>
-      </a>
+      </div>
     </div>
   </div>
-</div>
 
-<script>
-  feather.replace();
-</script>
+    <script>
+      feather.replace();
+    </script>
 </body>
 </html>

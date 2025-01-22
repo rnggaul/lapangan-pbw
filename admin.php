@@ -1,10 +1,77 @@
+<?php
+$conn = new mysqli('localhost', 'root', '', 'user_web');
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Delete Data
+if (isset($_GET['delete'])) {
+    $id = $_GET['delete'];
+    $sql = "DELETE FROM lapangan WHERE id_lapangan=$id";
+    if (!$conn->query($sql)) {
+        echo "Error: " . $conn->error;
+    }
+}
+
+// Fetch Data
+$sql = "SELECT * FROM lapangan";
+$result = $conn->query($sql);
+
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleAdmin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <title>Dashboard Admin</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #343a40;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .sidebar ul li a:hover {
+            background-color: #495057;
+        }
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content-section {
+            display: none;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <!-- Sidebar -->
@@ -20,12 +87,49 @@
 
     <!-- Main Content -->
     <div class="main-content">
-        <section id="lapangan" class="content-section">
+        <!-- Lapangan Section -->
+        <section id="lapangan" class="content-section active">
             <h1>Lapangan yang Tersedia</h1>
             <p>Menampilkan daftar lapangan yang tersedia dan sudah disewa.</p>
+            <div class="mb-3">
+                <a href="isilapangan.php" class="btn btn-primary">Tambah Data</a>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nama Lapangan</th>
+                                <th>Harga</th>
+                                <th>Keterangan</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                    echo "<tr>
+                                            <td>{$row['nama_lapangan']}</td>
+                                            <td>{$row['harga']}</td>
+                                            <td>{$row['keterangan']}</td>
+                                            <td>
+                                                <a href='?delete={$row['id_lapangan']}' class='btn btn-danger btn-sm'>Delete</a>
+                                            </td>
+                                        </tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='4' class='text-center'>No Data Found</td></tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
-        <section id="edit" class="content-section" style="display: none;">
+        <!-- Edit Section -->
+        <section id="edit" class="content-section">
             <h1>Edit Harga dan Gambar Lapangan</h1>
             <form>
                 <label for="harga">Harga Baru:</label>
@@ -38,9 +142,10 @@
             </form>
         </section>
 
-        <section id="laporan" class="content-section" style="display: none;">
+        <!-- Laporan Keuangan Section -->
+        <section id="laporan" class="content-section">
             <h1>Laporan Keuangan</h1>
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Tanggal</th>
@@ -61,37 +166,17 @@
         </section>
     </div>
 
-    <!-- Logout Confirmation Popup -->
-    <div id="logoutPopup" class="popup">
-        <div class="popup-content">
-            <h2>Konfirmasi Logout</h2>
-            <p>Apakah Anda yakin ingin logout?</p>
-            <button onclick="performLogout()">Ya</button>
-            <button onclick="closePopup()">Tidak</button>
-        </div>
-    </div>
-
     <script>
-        // Function to show sections dynamically
         function showSection(sectionId) {
             const sections = document.querySelectorAll('.content-section');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
         }
 
-        // Function to show the logout confirmation popup
         function confirmLogout() {
-            document.getElementById('logoutPopup').style.display = 'block';
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('logoutPopup').style.display = 'none';
-        }
-
-        // Function to perform the logout
-        function performLogout() {
-            window.location.href = 'index.php'; // Redirect to the logout page
+            if (confirm("Apakah Anda yakin ingin logout?")) {
+                window.location.href = 'index.php';
+            }
         }
     </script>
 </body>
