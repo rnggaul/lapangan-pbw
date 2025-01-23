@@ -14,7 +14,7 @@
 <body>
     <!-- navbar Start -->
     <nav class="navbar">
-        <a href="#" class="navbar-logo">Lapangan Futsal Merdeka</a>
+        <a href="#" class="navbar-logo">PrimeSport Center</a>
         <div class="navbar-nav">
             <a href="booking.php">Booking</a>
             <a href="#about">About</a>
@@ -33,7 +33,7 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Selamat Datang di <span>Lapangan Futsal</span> Merdeka</h1>
+            <h1>Selamat Datang di <span>PrimeSport</span> Center</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum totam earum ratione expedita id optio ullam facilis velit obcaecati? Vel at consectetur non nesciunt ex natus nostrum corporis alias.</p>
             <a href="booking.php" class="hero-btn">Booking Sekarang</a>
         </div>
@@ -56,7 +56,7 @@
 
     <!-- Fasilitas Section Start -->
     <section id="facility" class="fasilitas">
-        <h2 class="fasilitas-h2">Fasislitas Futsal Merdeka</h2>
+        <h2 class="fasilitas-h2">PrimeSport Center</h2>
         <div class="card-fasilitas">
             <img src="parkiran.jpg" alt="">
         </div>

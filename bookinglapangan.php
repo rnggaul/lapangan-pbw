@@ -8,6 +8,13 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Kustomisasi tombol untuk memastikan tampilan konsisten */
+        .btn {
+            padding: 0.5rem 1rem; /* Tambahkan padding agar tombol terlihat lebih proporsional */
+            font-size: 1rem;      /* Pastikan ukuran font tombol proporsional */
+        }
+    </style>
 </head>
 <body>
     
@@ -18,7 +25,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto d-flex align-items-center">
         <li class="nav-item">
           <a class="nav-link active" href="booking.html">Booking</a>
         </li>
@@ -32,10 +39,10 @@
           <a class="nav-link" href="index.php">Contact</a>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger mx-2">Login</button>
+          <button class="btn btn-danger btn-sm mx-2">Login</button>
         </li>
         <li class="nav-item">
-          <button class="btn btn-danger">Daftar</button>
+          <button class="btn btn-danger btn-sm mx-2">Daftar</button>
         </li>
       </ul>
     </div>
@@ -44,13 +51,17 @@
 
 <div class="container my-5">
     <h2 class="text-center mb-4">Booking Lapangan</h2>
+    <form id="booking" action="https://formspree.io/f/xldgenlr" method="POST">
     <form action="process_booking.php" method="POST">
         <div class="mb-3">
             <label for="venue" class="form-label">Pilih Lapangan</label>
             <select class="form-select" id="venue" name="venue" required>
-                <option value="Lapangan Generasi Baru">Lapangan Generasi Baru</option>
-                <option value="Ace Tennis">Ace Tennis</option>
-                <option value="Politeknik Sahid Kampus Roxy B">Politeknik Sahid Kampus Roxy B</option>
+                <option value="Lapangan Generasi Baru">Lapangan Futsal Sintetis</option>
+                <option value="Ace Tennis">Lapangan Tennis Indoor</option>
+                <option value="Politeknik Sahid Kampus Roxy B">Lapangan Badminton 1</option>
+                <option value="Politeknik Sahid Kampus Roxy B">Lapangan Badminton 2</option>
+                <option value="Politeknik Sahid Kampus Roxy B">Lapangan Mini Soccer</option>
+                <option value="Politeknik Sahid Kampus Roxy B">Lapangan Basket</option>
             </select>
         </div>
         <div class="mb-3">
@@ -78,10 +89,11 @@
         </div>
         <button type="submit" class="btn btn-primary w-100">Pesan Sekarang</button>
     </form>
+    </form>
 </div>
 
 <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2025 Lapangan Futsal Merdeka. All Rights Reserved.</p>
+    <p>&copy; 2025 PrimeSport Center. All Rights Reserved.</p>
 </footer>
 
 <script>

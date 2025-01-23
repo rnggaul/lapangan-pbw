@@ -79,7 +79,7 @@ $conn->close();
         <h2>Admin Dashboard</h2>
         <ul>
             <li><a href="#" onclick="showSection('lapangan')">Lapangan</a></li>
-            <li><a href="#" onclick="showSection('edit')">Edit</a></li>
+            <!-- <li><a href="#" onclick="showSection('edit')">Edit</a></li> -->
             <li><a href="#" onclick="showSection('laporan')">Laporan Keuangan</a></li>
             <li><a href="#" onclick="confirmLogout()">Logout</a></li>
         </ul>
@@ -90,7 +90,7 @@ $conn->close();
         <!-- Lapangan Section -->
         <section id="lapangan" class="content-section active">
             <h1>Lapangan yang Tersedia</h1>
-            <p>Menampilkan daftar lapangan yang tersedia dan sudah disewa.</p>
+            <p>Menampilkan daftar lapangan yang tersedia.</p>
             <div class="mb-3">
                 <a href="isilapangan.php" class="btn btn-primary">Tambah Data</a>
             </div>
@@ -129,7 +129,7 @@ $conn->close();
         </section>
 
         <!-- Edit Section -->
-        <section id="edit" class="content-section">
+        <!-- <section id="edit" class="content-section">
             <h1>Edit Harga dan Gambar Lapangan</h1>
             <form>
                 <label for="harga">Harga Baru:</label>
@@ -140,7 +140,7 @@ $conn->close();
                 <br>
                 <button type="submit">Simpan Perubahan</button>
             </form>
-        </section>
+        </section> -->
 
         <!-- Laporan Keuangan Section -->
         <section id="laporan" class="content-section">

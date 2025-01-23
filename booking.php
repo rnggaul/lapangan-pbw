@@ -17,7 +17,7 @@
     
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">Lapangan Futsal Merdeka</a>
+    <a class="navbar-brand" href="index.php">PrimeSport Center</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,12 +55,12 @@
         <div class="card">
           <img src="images/lapangan-rumput.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Lapangan Generasi Baru</h5>
+            <h5 class="card-title">Lapangan Futsal Sintetis</h5>
             <p class="card-text">
-              ⭐ 4.72 · Kota Jakarta Pusat<br>
-              <i class="bi bi-soccer-ball"></i> Futsal · Basketball
+              ⭐ 4.72 <br>
+              <i class="bi bi-soccer-ball"></i> Futsal 
             </p>
-            <p class="price">Mulai Rp240,000/sesi</p>
+            <p class="price">Mulai Rp120,000/sesi</p>
           </div>
         </div>
       </a>
@@ -72,12 +72,12 @@
         <div class="card">
           <img src="images/lapangantenis.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Ace Tennis</h5>
+            <h5 class="card-title">Lapangan Tennis Indoor</h5>
             <p class="card-text">
-              ⭐ 4.92 · Kota Jakarta Barat<br>
+              ⭐ 4.92 <br>
               <i class="bi bi-tennis-ball"></i> Tennis
             </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
+            <p class="price">Mulai Rp240,000/sesi</p>
           </div>
         </div>
       </a>
@@ -89,12 +89,12 @@
         <div class="card">
           <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
+            <h5 class="card-title">Lapangan Badminton 1</h5>
             <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
+              ⭐ 4.00<br>
               <i class="bi bi-badminton"></i> Badminton
             </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
+            <p class="price">Mulai Rp50,000/sesi</p>
           </div>
         </div>
       </a>
@@ -104,14 +104,14 @@
     <div class="col-md-4">
       <a href="bookinglapangan.php" class="text-decoration-none">
         <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
+          <img src="images/lapanganbadminton2.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
+            <h5 class="card-title">Lapangan Badminton 2</h5>
             <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
+              ⭐ 4.00 <br>
               <i class="bi bi-badminton"></i> Badminton
             </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
+            <p class="price">Mulai Rp50,000/sesi</p>
           </div>
         </div>
       </a>
@@ -121,14 +121,14 @@
     <div class="col-md-4">
       <a href="bookinglapangan.php" class="text-decoration-none">
         <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
+          <img src="images/miniSoccer.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
+            <h5 class="card-title">Lapangan Mini Soccer</h5>
             <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
-              <i class="bi bi-badminton"></i> Badminton
+              ⭐ 4.50 <br>
+              <i class="bi bi-badminton"></i> Mini Soccer
             </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
+            <p class="price">Mulai Rp500,000/sesi</p>
           </div>
         </div>
       </a>
@@ -138,14 +138,14 @@
     <div class="col-md-4">
       <a href="bookinglapangan.php" class="text-decoration-none">
         <div class="card">
-          <img src="images/lapanganbadminton.jpg" class="card-img-top" alt="Venue Image">
+          <img src="images/lapanganBasket.jpg" class="card-img-top" alt="Venue Image">
           <div class="card-body">
-            <h5 class="card-title">Politeknik Sahid Kampus Roxy B</h5>
+            <h5 class="card-title">Lapangan Basket</h5>
             <p class="card-text">
-              ⭐ 4.00 · Kota Jakarta Barat<br>
-              <i class="bi bi-badminton"></i> Badminton
+              ⭐ 4.80 <br>
+              <i class="bi bi-badminton"></i> Basket
             </p>
-            <p class="price">Mulai Rp150,000/sesi</p>
+            <p class="price">Mulai Rp170,000/sesi</p>
           </div>
         </div>
       </a>

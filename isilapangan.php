@@ -78,7 +78,6 @@ $conn->close();
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>ID</th>
                             <th>Nama Lapangan</th>
                             <th>Harga</th>
                             <th>Keterangan</th>
@@ -90,7 +89,6 @@ $conn->close();
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>
-                                        <td>{$row['id_lapangan']}</td>
                                         <td>{$row['nama_lapangan']}</td>
                                         <td>{$row['harga']}</td>
                                         <td>{$row['keterangan']}</td>
