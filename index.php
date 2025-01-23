@@ -34,7 +34,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Selamat Datang di <span>PrimeSport</span> Center</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos rerum totam earum ratione expedita id optio ullam facilis velit obcaecati? Vel at consectetur non nesciunt ex natus nostrum corporis alias.</p>
+            <p>Nikmati pengalaman bermain olahraga terbaik di PrimeSport Center! Dengan fasilitas modern dan suasana yang nyaman, kami siap mendukung performa terbaik Anda di setiap permainan.</p>
             <a href="booking.php" class="hero-btn">Booking Sekarang</a>
         </div>
     </section>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam voluptatum sint nesciunt doloribus, laborum quasi eos amet explicabo numquam laboriosam et harum similique deleniti libero, totam sapiente quas assumenda voluptatibus!</p>
+                <p>PrimeSport Center hadir untuk mendukung gaya hidup aktif Anda dengan menyediakan fasilitas olahraga terbaik. Dari lapangan yang berkualitas hingga suasana yang nyaman, kami berkomitmen menjadi pilihan utama untuk setiap momen olahraga Anda. Bergabunglah dengan komunitas kami dan rasakan semangat olahraga di sini!</p>
             </div>
         </div>
         
